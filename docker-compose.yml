@@ -6,16 +6,7 @@ services:
       - 5902:5901
     command:
        /root/startup.sh
-#      python manage.py runserver 0.0.0.0:8000
     volumes:
       - ./notebooks:/notebooks
       - ./startup.sh:/root/startup.sh
-#  frontend:
-#    build: ./frontend/
-#    ports:
-#      - 3000:3000
-#    command:
-#      npx vite --port 3000 --host
-#    volumes:
-#      - ./frontend/app:/app
       
