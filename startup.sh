@@ -17,7 +17,5 @@ export DISPLAY=":1"
 sleep 10
 
 cd /notebooks
-jupyter notebook --allow-root --no-browser --ip=0.0.0.0 &
+jupyter notebook --allow-root --no-browser --ip=0.0.0.0 
 
-echo "Starting tail -f /dev/null..."
-tail -f /dev/null
