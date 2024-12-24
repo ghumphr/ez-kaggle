@@ -7,7 +7,6 @@ echo "127.0.1.1\t$HOSTNAME" >> /etc/hosts
 RESOLUTION="${RESOLUTION:-1024x768}"
 
 echo "Starting VNC server at $RESOLUTION..."
-#Xtigervnc -kill :1 || true
 rm /tmp/.X1-lock
 Xtigervnc :1 -geometry $RESOLUTION -SecurityTypes=None && echo "VNC server started at $RESOLUTION! ^-^" &
 
